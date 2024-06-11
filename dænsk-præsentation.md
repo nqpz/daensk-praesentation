@@ -26,15 +26,42 @@ The Danish language, improved
 
 [comment]: # (!!!)
 
+
 <section class="row">
 
 ![](media/fotos/jellingesten.jpg)
 
 <div>
 
-- Jellinge stone
-- Danish stone
+- Knows Danish
+- Knows its flaws
+- Can fix them
 
 </div>
 
 </section>
+
+[comment]: # (!!!)
+
+
+# Danish alphabet
+
+ᚠ ᚢ ᚦ ᚬ ᚱ ᚴ ᚼ ᚾ ᛁ ᛅ ᛋ ᛏ ᛒ ᛘ ᛚ ᛦ
+
+⇓
+
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z **Æ Ø Å**
+
+[comment]: # (!!!)
+
+
+# Flaws of Danish
+
+- Many vowel sounds
+- Big gap between spoken and written language
+
+[comment]: # (!!!)
+
+
+# Other flaws
+
