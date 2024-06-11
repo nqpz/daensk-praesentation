@@ -5,4 +5,4 @@ $(HTML): dænsk-præsentation.md $(find media)
 
 .PHONY: run
 run: $(HTML)
-	firefox $<
+	surf -bdgmn $< &
