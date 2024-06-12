@@ -55,13 +55,220 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z **Æ Ø Å**
 [comment]: # (!!!)
 
 
+# Æ Ø Å
+
+- åh: ah/oh
+- øh: eh
+- æh: uh
+
+[comment]: # (!!! data-auto-animate)
+
+# Æ Ø Å
+
+- åh: ah/oh
+- øh: eh
+- æh: uh
+- But also:
+  - ah: ah
+  - ih: ah/oh
+  - uh: oh
+
+[comment]: # (!!! data-auto-animate)
+
+
 # Flaws of Danish
 
 - Many vowel sounds
+  - i, iː, y, yː, u, uː,\
+    e, eː, ø, øː, ə, o, oː,\
+    ɛ, ɛː, œ, œː, ɐ, ɔ, ɔː,\
+    a, aː, ɑ, ɑː, ɒ, ɒː
 - Big gap between spoken and written language
+
+[comment]: # (!!! data-auto-animate)
+
+# Flaws of Danish
+
+- ~~Many vowel sounds~~
+- ~~Big gap between spoken and written language~~
+- Focus now: **Somewhat big alphabet**
+- (Other flaws to come later in the presentation)
+
+Note: I'm going to address the two flaws indirectly, but I want to focus
+on something more specific.
+
+[comment]: # (!!! data-auto-animate)
+
+
+# Somewhat big alphabet
+
+- **Danish:**
+  - Population of Danish speakers: ~6 million
+  - Number of letters in alphabet: 29
+  - ~4.83 μ-letters per person
+
+- **English:**
+  - Population of English speakers: ~1.5 billion
+  - Number of letters in alphabet: 26
+  - ~0.02 μ-letters per person
+
+Note: This is a measure of how big a burden each speaker of the language
+needs to carry.  By trimming the language down in size, it will be
+easier to carry it into the future.
 
 [comment]: # (!!!)
 
 
-# Other flaws
+# Somewhat big alphabet
 
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
+
+[comment]: # (!!! data-auto-animate)
+
+# Somewhat big alphabet
+
+**A** B C D **E** F G H **I** J K L M N **O** P Q R S T **U** V W X **Y** Z **Æ** **Ø** **Å**
+
+[comment]: # (!!! data-auto-animate)
+
+# Somewhat big alphabet
+
+- A
+- E
+- I
+- O
+- U
+- Y
+- Æ
+- Ø
+- Å
+
+[comment]: # (!!! data-auto-animate)
+
+# Somewhat big alphabet
+
+- ~~A~~
+- ~~E~~
+- ~~I~~
+- ~~O~~
+- ~~U~~
+- ~~Y~~
+- Æ
+- Ø
+- Å
+
+[comment]: # (!!! data-auto-animate)
+
+# Somewhat big alphabet
+
+- Æ
+- Ø
+- Å
+
+[comment]: # (!!! data-auto-animate)
+
+# Somewhat big alphabet
+
+B C D F G H J K L M N P Q R S T V W X Z **Æ** **Ø** **Å**
+
+[comment]: # (!!! data-auto-animate)
+
+# Somewhat big alphabet
+
+B C D F G H J K L M N P Q R S T V W X Z **Æ** **Ø** **Å**
+
+29 - 6 = 23 letters (nice!)
+
+[comment]: # (!!! data-auto-animate)
+
+
+# DÆNSK
+
+Note: We don't have an "a" anymore, so we'll use what sounds closest to
+it.
+
+[comment]: # (!!!)
+
+# Going from dansk to dænsk
+
+```sh
+sed -r -e 's/[eiy]+/æ/g' -e 's/[ou]+/ø/g' -e 's/a+/å/g'
+```
+
+- e, i, y → æ
+- o, u -> ø
+- a -> å
+
+Note: We collapse multiple equal vowels into just one in order to avoid
+things like "æææ".
+
+[comment]: # (!!!)
+
+
+# Some improvements and almost no problems
+
+[comment]: # (!!!)
+
+<section class="row">
+
+![](media/864px-CairoEgMuseumTaaMaskMostlyPhotographed.jpg)
+
+<div>
+
+## Egyptology
+
+- Previously:
+  - "egyptologi" *or*
+  - "ægyptologi"
+- Now: Always just "ægæptøløgæ" <!-- .element: class="fragment fade-up" -->
+
+</div>
+
+</section>
+
+Note: This is a common schism in Danish.
+
+[comment]: # (!!!)
+
+
+## snædæ
+
+- sneede (*snowed*)
+- snyde (*cheat*)
+
+[comment]: # (!!! data-background-image="media/sne.jpg" data-background-size="contain")
+
+
+## øffæcæl
+
+- officiel (*official*)
+- uofficiel (*unofficial*)
+
+[comment]: # (!!!)
+
+
+## fænsk
+
+- finsk (*Finnish*)
+- fynsk (*of Funen*)
+
+[comment]: # (!!!)
+
+
+# Some improvements and almost no problems
+
+- Only around 1% of Danish words are causing problems
+- There are always workarounds
+
+
+[comment]: # (!!!)
+
+
+# Encoding
+
+[comment]: # (!!!)
+
+
+# Back to the flaws of Danish
+
+- Hard to parse by old technology
