@@ -394,6 +394,64 @@ Problem: Old Danish text doesn't use **Å**
 
 [comment]: # (!!!)
 
+```c
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <time.h>
+#include <ctype.h>
+
+enum letter_kind {
+  ae, oe, aa, other
+};
+
+int main() {
+  int c;
+  size_t bit_count = 0;
+  enum letter_kind prev = other;
+
+  // Assume that input is in ISO 8859-1 such that æ, ø, and å are one byte each.
+  while ((c = getchar()) != EOF) {
+    switch (c) {
+    case 'e':
+    case 'i':
+    case 'y':
+    case 0xe6: // æ
+      if (prev != ae) {
+        bit_count += 2;
+        prev = ae;
+      }
+      break;
+    case 'o':
+    case 'u':
+    case 0xf8: // ø
+      if (prev != oe) {
+        bit_count += 2;
+        prev = oe;
+      }
+      break;
+    case 'a':
+    case 0xe5: // å
+      if (prev != aa) {
+        bit_count += 2;
+        prev = aa;
+      }
+      break;
+    default: // Like ASCII
+      // Assume that input contains only non-æøå characters that are also supported in ønæcødæ.
+      bit_count += 5;
+      prev = other;
+      break;
+    }
+  }
+
+  printf("Bits: %lu\nBytes: %lu\n", bit_count, bit_count / 8);
+}
+```
+<!-- .element: style="font-size: 15px; height: 950px;" -->
+
+[comment]: # (!!!)
+
 # ØTF-TØ testing
 
 - UTF-8: 3033 bytes
@@ -402,6 +460,16 @@ Problem: Old Danish text doesn't use **Å**
 
 [comment]: # (!!!)
 
+[comment]: # (!!! data-background-image="media/æøå.svg" data-background-size="contain")
+
+
 # Back to the flaws of Danish
 
-- Hard to parse by old technology
+- We have addressed an important *word-level* problem
+- We have yet to do something about the *language structure*
+
+[comment]: # (!!!)
+
+# Central flaw
+
+## Difficult to parse by old technology
