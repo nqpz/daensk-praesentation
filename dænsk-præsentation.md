@@ -26,22 +26,17 @@ The Danish language, improved
 
 [comment]: # (!!!)
 
-
-<section class="row">
-
 ![](media/fotos/jellingesten.jpg)
 
 <div>
 
-- Knows Danish
-- Knows its flaws
-- Can fix them
+- Knows Danish <!-- .element: class="fragment fade-up" -->
+- Knows its flaws <!-- .element: class="fragment fade-up" -->
+- Can fix them <!-- .element: class="fragment fade-up" -->
 
 </div>
 
-</section>
-
-[comment]: # (!!!)
+[comment]: # (!!! class="row" data-auto-animate)
 
 
 # Danish alphabet
