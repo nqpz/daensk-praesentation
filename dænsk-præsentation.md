@@ -298,10 +298,109 @@ Note: This is a common schism in Danish.
 [comment]: # (!!!)
 
 
-# Encoding
+# Encoding Dænsk
+
+**Problem:** Existing character encodings support more characters than necessary
 
 [comment]: # (!!!)
 
+# Encoding Dænsk: UTF-8
+
+Already too big for normal Danish
+
+[comment]: # (!!!)
+
+# Encoding Dænsk: ISO-8859-1
+
+Much better:
+
+![](media/Latin-1-infobox.svg)
+
+**But still supports too many characters**
+
+[comment]: # (!!!)
+
+# New encoding
+
+- Goal: Save bytes
+- Inspiration: UTF-8
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-2
+
+- Goal: Save bytes
+- Inspiration: UTF-8
+
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-TØ
+
+- Goal: Save bytes
+- Inspiration: UTF-8
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-TØ
+
+- Always at least 2 bits:
+  - `0 0`: **æ**
+  - `0 1`: **ø**
+  - `1 0`: **å**
+  - `1 1`: 5 extra bits in this case:
+    - 20 spots for consonants
+    - 11 spots for punctuation and symbols
+    - 1 reserved
+- ⇒ Each letter is represented with either 2 or 7 bits.
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-TØ testing
+
+**Idea:**
+
+1. Find a text in Danish
+2. Check how much space it takes up in UTF-8
+3. Check how much space it would take up in dænsk in ØTF-TØ
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-TØ testing
+
+**Idea:**
+
+1. Find a text in Danish
+
+Project Gutenberg?
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-TØ testing
+
+**Idea:**
+
+1. Find a text in Danish
+
+~~Project Gutenberg?~~
+
+Problem: Old Danish text doesn't use **Å**
+
+[comment]: # (!!! data-auto-animate)
+
+# ØTF-TØ testing
+
+![](media/wikidanmark.png)
+
+[comment]: # (!!!)
+
+# ØTF-TØ testing
+
+- UTF-8: 3033 bytes
+- ØTF-TØ: 688 bytes
+- **Over 4 times smaller**
+
+[comment]: # (!!!)
 
 # Back to the flaws of Danish
 
