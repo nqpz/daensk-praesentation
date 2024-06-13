@@ -239,13 +239,52 @@ Note: This is a common schism in Danish.
 - officiel (*official*)
 - uofficiel (*unofficial*)
 
-[comment]: # (!!!)
+[comment]: # (!!! data-auto-animate)
 
+## øffæcæl
+
+- officiel (*official*)
+- uofficiel (*unofficial*)
+
+<br>
+
+**Solution:** ikke (*not*) or **ækkæ**
+
+- øffæcæl (*official*)
+- ækkæ øffæcæl (*unofficial*)
+
+[comment]: # (!!! data-auto-animate)
+
+## øffæcæl
+
+- officiel (*official*)
+- uofficiel (*unofficial*)
+
+<br>
+
+**Solution:** ikke (*not*) or **ækkæ**
+
+- øffæcæl (*official*)
+- ækkæ øffæcæl (*unofficial*)
+
+<br>
+
+**Further simplification:**
+
+- øffæcæl (*official*)
+- ækøffæcæl (*unofficial*)
+
+[comment]: # (!!! data-auto-animate)
+
+![](media/Flag_of_Finland.svg) <!-- .element: style="width: 500px; position: absolute; top: 50px; left: 100px" -->
 
 ## fænsk
 
 - finsk (*Finnish*)
 - fynsk (*of Funen*)
+
+![](media/Location_map_Funen.svg) <!-- .element: style="width: 500px; position: absolute; top: 50px; right: 100px" -->
+
 
 [comment]: # (!!!)
 
