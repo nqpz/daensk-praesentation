@@ -9,8 +9,4 @@ with import <nixpkgs> {};
 
 mkShell {
   buildInputs = [ python3 surf ];
-
-  shellHook = ''
-    . .venv/bin/activate
-  '';
 }
