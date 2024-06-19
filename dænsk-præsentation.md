@@ -590,6 +590,9 @@ Note: So maybe this will be fast enough today?
 - But this is old technology which claims to parse Danish
 - Is my claim wrong?
 - Let's try to parse Danish
+  - Useful for analyzing and translating the language.
+
+Note: Put in another way: If it's hard to build a tool for a language because of complexity, you can either improve the tool or improve the language.  I want to improve the language.
 
 [comment]: # (!!!)
 
@@ -615,3 +618,239 @@ spends a good chunk dissing the software.
 ![](media/didepåprolog-titel.png)
 
 ![](media/diderichsen-dst.png) <!-- .element: class="fragment fade-up" -->
+
+[comment]: # (!!!)
+
+# More Diderichsen
+
+![](media/d0.png)
+
+![](media/d1.png) <!-- .element: class="fragment fade-up" -->
+
+![](media/d2.png) <!-- .element: class="fragment fade-up" -->
+
+![](media/d3.png) <!-- .element: class="fragment fade-up" -->
+
+[comment]: # (!!!)
+
+# Going to the source
+
+- This is a book.
+- You can get books at libraries.
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/bib0.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib1.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib2.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib3.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib4.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib5.jpg" data-background-size="contain")
+
+# Oops
+
+Note: The book was not actually available.
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/bib6.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib7.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/bib8.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/tbog0.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/tbog1.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/tbog2.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/tbog3.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/tbog4.jpg" data-background-size="contain")
+
+# Problem
+
+- Great words, but
+- Not very principled approach
+
+<br>
+
+# Solution
+
+- Borrow book in a more restricted manner
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/diam0.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/diam1.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/diam2.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/diam3.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/diam4.jpg" data-background-size="contain")
+
+# Elementær dansk Grammatik by Paul Diderichsen
+
+- Original 1946 version
+- Not allowed to take it home
+- The reading room closes at 18:00 on weekdays (17:00 on Fridays)
+
+[comment]: # (!!!)
+
+# Two main parts
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/ordlære.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/syntaks.jpg" data-background-size="contain")
+
+Note: It is probably mainly this syntax part that we're interested. I
+think this describes the *structure* of the language, which is what we
+agreed on was missing from the starting Æ Ø Å talk.
+
+[comment]: # (!!! data-background-image="media/fotos/udtryktønske.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/skaanske.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/sprogejendommeligheder.jpg" data-background-size="contain")
+
+# "Fejl" = sprogejendommeligheder
+
+*("Errors" = linguistic peculiarities)*
+
+**⇒ We can make dænsk happen!** <!-- .element: class="fragment fade-up" -->
+
+[comment]: # (!!!)
+
+# But what about the syntax?
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/syntagmer.jpg" data-background-size="contain")
+
+# Takeaways so far
+
+- There's a finite number of words (nice!)
+- There are millions of word structures (oh no!)
+- Word structures consist af smaller structures stitched together
+
+[comment]: # (!!!)
+
+# Example
+
+![](media/fotos/structures-examples.jpg)
+
+Note: I didn't fully understand the nexus thing, but that's not so important. The important part is that there is a compositional structure that someone has described.
+
+[comment]: # (!!!)
+
+Note: I don't understand this.
+
+[comment]: # (!!! data-background-image="media/fotos/skema.jpg" data-background-size="contain")
+
+Note: But then we get to this table, which is a bit more straightforward and also shows some nice notation.
+
+[comment]: # (!!! data-background-image="media/fotos/bisætning-hovedsætning.jpg" data-background-size="contain")
+
+# Other linguistic sources?
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug0.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug1.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug2.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug3.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug4.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug5.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug6.jpg" data-background-size="contain")
+
+Note: I would also recommend The Definition of Standard ML, which is also an inspiration for how to describe a language, albeit a programming one.
+
+[comment]: # (!!! data-background-image="media/fotos/genbrug7.jpg" data-background-size="contain")
+
+# Comma rules in Danish
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/comma0.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/comma1.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/comma2.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/comma3.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/comma4.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/comma5.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/comma6.jpg" data-background-size="contain")
+
+
+# Comma takeaway
+
+Don't have them in dænsk.
+
+[comment]: # (!!!)
+
+
+# Many more books
+
+[comment]: # (!!!)
+
+[comment]: # (!!! data-background-image="media/fotos/turboprolog.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/compling.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/nlu.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/lingstructs.jpg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/fotos/categories.jpg" data-background-size="contain")
+
+Note: I'm not going into detail on this, but you're welcome to borrow my books if you want.
+
+[comment]: # (!!! data-background-image="media/fotos/weirdnlu.jpg" data-background-size="contain")
+
+# Taking a step back
+
+- Lots of 80s/early 90s literature on this approach
+- Initial focus on "computerizing" Danish linguistics research from the 40s
+- Focus changes a bit to also try out different representations
+- General Prolog-based approach stays constant
+- ⇒ We need to do something with Prolog! <!-- .element: class="fragment fade-up" -->
+
+[comment]: # (!!!)
+
+# Not just Denmark
+
+- Prolog also has other implementations than PC-PROLOG from Denmark
+- How was/is it used in other countries?
+- What can we learn from that in order to build our own solution?
+
+[comment]: # (!!!)
+
+# EUROTRA
+
+[comment]: # (!!!)
+
+# Making our own EUROTRA
+
+[comment]: # (!!!)
+
+# Conclusion
