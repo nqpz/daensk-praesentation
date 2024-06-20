@@ -1,0 +1,26 @@
+UK: 56341000
+Ireland: 3432000
+English: 56341000 + 3432000 = 59773000
+
+Italy: 56479000
+Italian: 56479000
+
+Belgium: 9863000
+French Belgium: 9863000 0.4 = 3945200
+Dutch Belgium: 9863000 0.6 = 5917800
+
+Luxembourg: 364000
+French Lux: 364000
+German Lux: 364000 0.8 = 291200
+
+Germany: 61658000
+German: 61658000 + 291200 = 61949200
+
+France: 53880000
+French: 53880000 + 3945200 + 364000 = 58189200
+
+Netherlands: 14091000
+Dutch: 14091000 + 5917800 = 20008800
+
+Denmark: 5124000
+Danish: 5124000

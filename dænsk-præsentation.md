@@ -592,11 +592,9 @@ Note: So maybe this will be fast enough today?
 - Let's try to parse Danish
   - Useful for analyzing and translating the language.
 
-Note: Put in another way: If it's hard to build a tool for a language because of complexity, you can either improve the tool or improve the language.  I want to improve the language.
-
 [comment]: # (!!!)
 
-# Scouring the literature
+# Searching the literature
 
 [comment]: # (!!!)
 
@@ -741,7 +739,7 @@ agreed on was missing from the starting Æ Ø Å talk.
 
 - There's a finite number of words (nice!)
 - There are millions of word structures (oh no!)
-- Word structures consist af smaller structures stitched together
+- Word structures consist af smaller structures stitched together (nice!)
 
 [comment]: # (!!!)
 
@@ -847,10 +845,385 @@ Note: I'm not going into detail on this, but you're welcome to borrow my books i
 
 # EUROTRA
 
-[comment]: # (!!!)
-
-# Making our own EUROTRA
+![](media/parsing-text-in-eurotra.png)
 
 [comment]: # (!!!)
+
+# EUROTRA today
+
+![](media/eurotra-nowadays.png)
+
+[comment]: # (!!!)
+
+# EUROTRA back then
+
+![](media/eurotra-orig0.png)
+
+[comment]: # (!!!)
+
+![](media/eurotra-orig1.png)
+
+Note: This was the earliest document I could find, but it mentions the
+project start to be in 1978.
+
+[comment]: # (!!!)
+
+# The European Economic Community in 1980
+
+[comment]: # (!!! data-auto-animate)
+
+# The EEC in 1980
+
+[comment]: # (!!! data-auto-animate)
+
+# The EEC in 1980
+
+- Members since 1957:
+  - Belgium
+  - France
+  - West Germany
+  - Italy
+  - Luxembourg
+  - Netherlands
+- Members since 1973:
+  - Ireland
+  - **Denmark**
+
+[comment]: # (!!! data-auto-animate)
+
+# The EEC in 1980
+
+- Languages:
+  - English
+  - German
+  - French
+  - Italian
+  - Dutch
+  - Danish
+
+[comment]: # (!!! data-auto-animate)
+
+# The EEC in 1980
+
+![](media/eeclangs/eeclangs.png)
+
+Note: Danish is a small language but is nevertheless an official
+language, with all the translation requirements that come with it.
+
+[comment]: # (!!! data-auto-animate)
+
+![](media/5years.png)
+
+[comment]: # (!!!)
+
+# Technical foundation
+
+- $6$ languages
+- $2 \cdot (5 + 4 + 3 + 2 + 1) = 30$ language pairs
+- Each language has
+  - an analysis module for parsing the language, and
+  - a synthesis module for generating the language
+- There's a common representation that languages translate to and from
+
+[comment]: # (!!!)
+
+# Layers
+
+1. *ECS:* Eurotra Constituent Structure
+    - Parse the language into a grammatical tree (nouns, verbs, ...)
+2. *ERS:* Eurotra Relational Structure
+    - Transform the ECS tree into a tree decorated with how words<br>relate
+    to each other (subject, object, ...)
+3. *IS*: Interface Structure
+    - Transform the ERS tree into a predicate-first representation.
+
+[comment]: # (!!! data-auto-animate)
+
+# Layers
+
+![](media/layer0.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Layers
+
+![](media/layer1.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Layers
+
+![](media/layer2.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Layers
+
+![](media/layer3.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Great!
+
+[comment]: # (!!! data-auto-animate)
+
+# Ambiguities
+
+![](media/14trees.png)
+
+[comment]: # (!!!)
+
+![](media/14t0.png)
+
+[comment]: # (!!!)
+
+![](media/14t1.png)
+
+[comment]: # (!!!)
+
+![](media/14t2.png)
+
+[comment]: # (!!!)
+
+udvikling **i** bistanden **fra** USA **til** England
+
+X **i** Y **fra** Z **til** V
+
+X **in** Y **from** Z **to** V
+
+(X **in** Y) **from** (Z **to** V)
+
+(X **in** (Y **from** Z)) **to** V
+
+...
+
+[comment]: # (!!!)
+
+# Solving problems
+
+EUROTRA was an EEC-founded project, so how did they solve these problems?
+
+[comment]: # (!!!)
+
+# Searching the archives
+
+![](media/eurotra/137results.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Searching the archives
+
+![](media/eurotra/export-following-days.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Searching the archives
+
+![](media/eurotra/eurlexreply.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Searching the archives
+
+![](media/eurotra/docs-mentioning-eurotra0.png)
+
+[comment]: # (!!! data-auto-animate)
+
+# Searching the archives
+
+![](media/eurotra/docs-mentioning-eurotra.png)
+
+Note: With so much time to work on this, they must have solved all the problems.
+
+[comment]: # (!!! data-auto-animate)
+
+# Time passes
+
+Note: The great thing about the EU archive is that all of the documents
+are also in Danish. But even for Danish-speaking people this might not
+be easy to read, so I'll give a short summary for each bit.
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/1græsk.png) <!-- .element: width="1600" -->
+
+*Greece enters the EEC in 1981 (along with a new alphabet).*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/2konsulenter.png) <!-- .element: width="1600" -->
+
+*Consultants enter the picture.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/5optimistic.png) <!-- .element: width="1400" -->
+
+*The European Economic and Social Committee is sceptical towards The
+Commission's claims of spending five years to develop the most advanced
+translation system.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/6delayhalfyear.png) <!-- .element: width="1400" -->
+
+*The project needs to be delayed by half a year.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/7expenseincrease.png) <!-- .element: width="1400" -->
+
+*The budget needs to be increased by 25%.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/1982donein1988.png) <!-- .element: width="1400" -->
+
+*The project is expected to be finished in 1988.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/1982rovsing-esperanto.png) <!-- .element: width="1400" -->
+
+*Alternatives crop up.  Christian Rovsing suggests using Esperanto as an intermediary language.*
+
+Note: Christian Rovsing goes bankrupt and this doesn't happen. Later the owner becomes a member of parliament, which is confusing when searching through the archives.
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/1984flereudgifter.png) <!-- .element: width="900" -->
+
+*The budget increases.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/1986udvidelseforsinkelse.png) <!-- .element: width="1400" -->
+
+*Spain and Portugal joins the EEC. This adds another delay and budget increase.*
+
+*There are now 72 language pairs.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/88answer0.png) <!-- .element: width="1400" -->
+![](media/eurotradocexcerpts/88answer1.png) <!-- .element: width="1400" -->
+
+*There's an expectation that the project will need an additial<br>3-5 years once it's finished to *actually* finish.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/88øsu-sælge.png) <!-- .element: width="900" -->
+
+*It's going to be so great that everyone is going to want to buy it.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/89ecu.png) <!-- .element: width="1400" -->
+
+*Let's just double the budget.*
+
+[comment]: # (!!!)
+
+# ...
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/93finalreport.png) <!-- .element: width="1900" -->
+
+*1993: It's the final report!*
+
+[comment]: # (!!!)
+
+# The final report
+
+![](media/eurotradocexcerpts/93monument.png) <!-- .element: width="1900" -->
+
+*We never produced a good book about this, but we do have a nice manual.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/93tid.png) <!-- .element: width="1900" -->
+
+*We spent more time than expected.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/93problemer.png) <!-- .element: width="1900" -->
+
+*1. Academics research grammars, they don't create dictionaries.*
+
+*2. Academics write papers, they don't write maintainable software.*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/93prolog.png) <!-- .element: width="1900" -->
+
+*Prolog is still great! The performance could be better!*
+
+[comment]: # (!!!)
+
+![](media/eurotradocexcerpts/93statistiskemetoder.png) <!-- .element: width="1900" -->
+
+*In the future let's maybe try this machine learning instead.*
+
+[comment]: # (!!! data-auto-animate)
+
+![](media/eurotradocexcerpts/93statistiskemetoder.png) <!-- .element: width="1900" -->
+
+*~~In the future let's maybe try this machine learning instead.~~*
+
+[comment]: # (!!! data-auto-animate)
+
+# Let's remake EUROTRA
+
+- Seems like a good idea!
+- Computers are much faster today, so we can happily use Prolog.
+
+[comment]: # (!!!)
+
+# Checklist
+
+1. Find a dictionary of
+    - Danish words
+    - Danish grammar structures
+2. Write a program that analyzes Danish sentences
+3. Future work: Do the actual translation
+
+[comment]: # (!!!)
+
+# Dictionary
+
+![](media/sto-hjemmeside.png)
+
+[comment]: # (!!!)
+
+# Taking another step back
+
+This entire detour was just an attempt to prove myself wrong
+
+## Difficult to parse by old technology
+
+So this still seems like an central flaw
+
+[comment]: # (!!!)
+
+# Fixing the right thing
+
+- We have tried to improve the state-of-the-art 80s tooling
+- What if we instead improve the language itself?
+
+Note: Put in another way: If it's hard to build a tool for a language because of complexity, you can either improve the tool or improve the language.  I want to improve the language.
+
+[comment]: # (!!!)
+
+# Syntax in dænsk
+
+
+
+[comment]: # (!!!)
+
+# Putting it all together
+
+
 
 # Conclusion

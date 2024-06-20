@@ -7,6 +7,12 @@ from collections import defaultdict
 
 import matplotlib.pyplot as plt
 
+font = {'family' : 'normal',
+        'weight' : 'bold',
+        'size'   : 22}
+
+plt.rc('font', **font)
+
 def get_row_columns(reader, columns_requested):
     column_names = next(reader)
     # print(f'Columns:\n{" | ".join(column_names)}', file=sys.stderr)
