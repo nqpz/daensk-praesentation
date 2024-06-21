@@ -1197,13 +1197,166 @@ Note: Christian Rovsing goes bankrupt and this doesn't happen. Later the owner b
 
 [comment]: # (!!!)
 
+# Example
+
+```xml
+<SubcategorizationFrame id="Dv3xNP0-ned-på">
+  <feat att="naming" val="trivalent (phrasal): NP, NP, PP part=ned prep=på"/>
+  <feat att="example" val="Han ridsede bogstavet ned på pladen"/>
+  <feat att="constructionId" val="Cv3NP0-på"/>
+  <LexemeProperty>
+    <feat att="partOfSpeech" val="verb"/>
+    <feat att="selfId" val="NED_have_NO_NO"/>
+    <feat att="reflexiveVerb" val="no"/>
+    <feat att="takesParticle" val="ned"/>
+    <feat att="takesAuxiliary" val="have"/>
+    <feat att="passiveVerb" val="no"/>
+    <feat att="modal" val="no"/>
+    <feat att="auxiliary" val="no"/>
+  </LexemeProperty>
+  <SyntacticArgument>
+    <feat att="positionNumber" val="1"/>
+    <feat att="syntacticFunctionType" val="subject"/>
+    <feat att="optional" val="no"/>
+    <feat att="syntacticConstituentLabel" val="NP"/>
+    <feat att="syntacticConstituentPhraseId" val="subjectNominativeCase"/>
+    <feat att="case" val="nominativeCase"/>
+    <feat att="reflexiveVoice" val="no"/>
+    <feat att="expletive" val="no"/>
+    <feat att="definiteness" val="unspecified"/>
+    <feat att="npIndex" val="I"/>
+  </SyntacticArgument>
+  <SyntacticArgument>
+    <feat att="positionNumber" val="2"/>
+    <feat att="syntacticFunctionType" val="directObject"/>
+    <feat att="optional" val="no"/>
+    <feat att="syntacticConstituentLabel" val="NP"/>
+    <feat att="syntacticConstituentPhraseId" val="accusativeCase"/>
+    <feat att="case" val="accusativeCase"/>
+    <feat att="reflexiveVoice" val="unspecified"/>
+    <feat att="expletive" val="no"/>
+    <feat att="definiteness" val="unspecified"/>
+    <feat att="npIndex" val="J"/>
+  </SyntacticArgument>
+  <SyntacticArgument>
+    <feat att="positionNumber" val="3"/>
+    <feat att="syntacticFunctionType" val="prepositionalComplement"/>
+    <feat att="optional" val="yes"/>
+    <feat att="syntacticConstituentLabel" val="PP"/>
+    <feat att="syntacticConstituentPhraseId" val="PÅ_NP_NOC_NOC"/>
+    <feat att="introducer" val="på"/>
+    <feat att="ppComplementLabel" val="NP"/>
+  </SyntacticArgument>
+</SubcategorizationFrame>
+```
+<!-- .element: style="font-size: 14px; height: 820px;" -->
+
+[comment]: # (!!!)
+
+# Example
+
+```xml
+<SubcategorizationFrame id="Dv3xNP0-ned-på">
+  <LexemeProperty>
+    <feat att="partOfSpeech" val="verb"/>
+    <feat att="takesParticle" val="ned"/>
+  </LexemeProperty>
+  <SyntacticArgument>
+    <feat att="positionNumber" val="1"/>
+    <feat att="syntacticFunctionType" val="subject"/>
+    <feat att="optional" val="no"/>
+    <feat att="syntacticConstituentLabel" val="NP"/>
+    <feat att="case" val="nominativeCase"/>
+  </SyntacticArgument>
+  <SyntacticArgument>
+    <feat att="positionNumber" val="2"/>
+    <feat att="syntacticFunctionType" val="directObject"/>
+    <feat att="optional" val="no"/>
+    <feat att="syntacticConstituentLabel" val="NP"/>
+    <feat att="case" val="accusativeCase"/>
+    <feat att="definiteness" val="unspecified"/>
+  </SyntacticArgument>
+  <SyntacticArgument>
+    <feat att="positionNumber" val="3"/>
+    <feat att="optional" val="yes"/>
+    <feat att="introducer" val="på"/>
+    <feat att="ppComplementLabel" val="NP"/>
+  </SyntacticArgument>
+</SubcategorizationFrame>
+```
+<!-- .element: style="font-size: 18px; height: 590px;" -->
+
+<br>
+
+"**Han** ridsede **bogstavet** **ned** **på** **pladen**"
+
+*"**He** scratched **the letter down onto the board**"*
+
+[comment]: # (!!!)
+
+# Tech stack
+
+XML
+
+⇓
+
+Prolog
+
+[comment]: # (!!! data-auto-animate)
+
+# Tech stack
+
+XML
+
+⇓
+
+?
+
+⇓
+
+Prolog
+
+[comment]: # (!!! data-auto-animate)
+
+# Tech stack
+
+XML
+
+⇓
+
+**Haskell**
+
+⇓
+
+Prolog
+
+[comment]: # (!!! data-auto-animate)
+
+[comment]: # (!!! data-background-image="media/techcheck-haskell.svg" data-background-size="contain")
+
+[comment]: # (!!! data-background-image="media/techcheck-miranda.svg" data-background-size="contain")
+
+1. Generate a Haskell datatype from the XML DTD
+2. Parse all XML files at build time and embed them as compressed data <!-- .element: class="fragment fade-down" -->
+3. Compile the data into Prolog files <!-- .element: class="fragment fade-down" -->
+4. Compile the Prolog files into an executable <!-- .element: class="fragment fade-down" -->
+5. Run the executable in order to analyze Danish <!-- .element: class="fragment fade-down" -->
+
+**DEMO TIME** <!-- .element: class="fragment fade-down" -->
+
+[comment]: # (!!!)
+
 # Taking another step back
 
-This entire detour was just an attempt to prove myself wrong
+This entire detour was just an attempt to prove myself wrong...
+
+... but maybe I was right? <!-- .element: class="fragment fade-in" -->
+
+[comment]: # (!!!)
 
 ## Difficult to parse by old technology
 
-So this still seems like an central flaw
+This still seems like the central flaw.
 
 [comment]: # (!!!)
 
@@ -1212,7 +1365,9 @@ So this still seems like an central flaw
 - We have tried to improve the state-of-the-art 80s tooling
 - What if we instead improve the language itself?
 
-Note: Put in another way: If it's hard to build a tool for a language because of complexity, you can either improve the tool or improve the language.  I want to improve the language.
+Note: Put in another way: If it's hard to build a tool for a language
+because of complexity, you can either improve the tool or improve the
+language.  I want to improve the language.
 
 [comment]: # (!!!)
 
