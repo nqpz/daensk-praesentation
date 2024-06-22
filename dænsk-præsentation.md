@@ -1075,6 +1075,8 @@ translation system.*
 
 *The budget needs to be increased by 25%.*
 
+Note: ECU = European Currency Unit (it's a bit like Hax)
+
 [comment]: # (!!!)
 
 ![](media/eurotradocexcerpts/1982donein1988.png) <!-- .element: width="1400" -->
@@ -1087,7 +1089,9 @@ translation system.*
 
 *Alternatives crop up.  Christian Rovsing suggests using Esperanto as an intermediary language.*
 
-Note: Christian Rovsing goes bankrupt and this doesn't happen. Later the owner becomes a member of parliament, which is confusing when searching through the archives.
+Note: Christian Rovsing goes bankrupt and this doesn't happen. Later the
+owner becomes a member of parliament, which is confusing when searching
+through the archives.
 
 [comment]: # (!!!)
 
@@ -1358,6 +1362,10 @@ This entire detour was just an attempt to prove myself wrong...
 
 This still seems like the central flaw.
 
+Note: The parsing itself can probably be done without too much trouble,
+but translating between different languages is definitely still hard
+this way.
+
 [comment]: # (!!!)
 
 # Fixing the right thing
@@ -1373,12 +1381,186 @@ language.  I want to improve the language.
 
 # Syntax in dænsk
 
+- Needs to be regular
+  - **No** exceptions
+- Needs to be something you can also speak
+  - This excludes predicate-based representations
+
+[comment]: # (!!!)
+
+# Word types
+
+Typical elements in Germanic languages:
+
+- Nouns
+- Verbs
+- Adjectives
+- Adverbials
+- Prepositions
+- Conjunctions
+- ...
+
+[comment]: # (!!! data-auto-animate)
+
+# Word types
+
+- Nouns
+- Verbs
+- ~~Adjectives~~
+- ~~Adverbials~~
+- ~~Prepositions~~
+- ~~Conjunctions~~
+- ~~...~~
+
+**Stick to SV and SVO**
+
+Convert any other word type to noun or verb
+
+Note: IF parsers were the original "disregard how language works, we
+redefine it to be simpler" approaches.
+
+[comment]: # (!!! data-auto-animate)
+
+# Examples
+
+[comment]: # (!!!)
+
+<div style="text-align: left;">
+
+Anden indrettede sig efter forholdene
+
+*The duck adjusted to the conditions*
+
+- Anden (*noun*)
+- indrettede (*verb*)
+- sig (*reflexive verb identifier*)
+- efter (*preposition*)
+- forholdene (*noun*)
+
+</div>
+
+[comment]: # (!!! data-auto-animate)
+
+- Subject
+  - Anden (*noun*)
+- "Verb"
+  - indrettede (*verb*)
+  - sig (*reflexive verb identifier*)
+  - efter (*preposition*)
+- "Object"
+  - forholdene (*noun*)
+
+[comment]: # (!!! data-auto-animate)
+
+- "Verb"
+  - indrettede (*verb*)
+  - sig (*reflexive verb identifier*)
+  - efter (*preposition*)
+
+[comment]: # (!!! data-auto-animate)
+
+- "Verb"
+  - indrettede (*verb*)
+  - eftersig (*preposition-reflexive verb identifier*)
+
+[comment]: # (!!! data-auto-animate)
+
+- "Verb"
+  - eftersigindrettede (*preposition-reflexive verb*)
+
+[comment]: # (!!! data-auto-animate)
+
+- Subject
+  - Anden (*noun*)
+- "Verb"
+  - eftersigindrettede (*preposition-reflexive verb*)
+- "Object"
+  - forholdene (*noun*)
+
+[comment]: # (!!! data-auto-animate)
+
+Anden indrettede sig efter forholdene
+
+↓
+
+Anden eftersigindrettede forholdene
+
+**Super easy to parse!**
+
+[comment]: # (!!! data-auto-animate)
+
+De klipser den fast
+
+(*They clip it on to something*)
+
+↓
+
+De fastklipser den
+
+Note: This can cause an explosion in the number of verbs, but it's
+simpler, and it's so broken anyway.
+
+[comment]: # (!!!)
+
+Vægtstangsprincippet fungerer dårligt
+
+(*The barbell principle does not work well*)
+
+↓
+
+Vægtstangsprincippet dårligtfungerer
+
+Note: This is an example with adverbials.
+
+[comment]: # (!!!)
+
+Han giver penge til butikken
+
+(*He gives money to the shop*)
+
+↓
+
+Han tilpengegiver butikken
+
+Note: This is an example with accusative.
 
 
 [comment]: # (!!!)
 
-# Putting it all together
+# Regarding translation
 
+Will need simplified languages for the targets as well:
 
+- Deutsch → Dæøtsch
+- français → frånçåæs
+- italiano → ætålæånø
+- Nederlands → Nædærlånds
+- ...
+
+[comment]: # (!!!)
 
 # Conclusion
+
+- Languages have a lot of legacy
+- You can remove that legacy
+- Making people us it is still hard
+
+[comment]: # (!!!)
+
+# Links and attribution
+
+<div style="text-align: left; font-size: 20px;">
+
+ønæcødæ:
+
+sto utilities:
+
+Tutankhamun mask:<br>
+Roland Unger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>,<br>
+via Wikimedia Commons https://commons.wikimedia.org/wiki/File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg
+
+Funen map:<br>
+Los688, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>,<br>
+via Wikimedia Commons https://commons.wikimedia.org/wiki/File:Location_map_Funen.svg
+
+</div>
