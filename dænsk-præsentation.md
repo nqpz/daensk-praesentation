@@ -17,12 +17,25 @@ section {
 section.row {
   flex-direction: row;
 }
+
+.contact-information a:link {
+  color: black;
+}
 </style>
 
 
 # DÆNSK
+## The Danish language, improved
 
-The Danish language, improved
+Niels G. W. Serup<br>
+19 July 2024
+<div class="contact-information" style="font-size: 0.5em; font-family: monospace; text-align: right">
+
+ngws@metanohi.name<br>
+<https://metanohi.name><br>
+<gopher://metanohi.name><br>
+
+</div>
 
 [comment]: # (!!!)
 
