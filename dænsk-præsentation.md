@@ -67,7 +67,7 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z **Æ Ø Å**
 
 - åh: ah/oh
 - øh: eh
-- æh: uh
+- æh: uh/eh
 
 [comment]: # (!!! data-auto-animate)
 
@@ -75,11 +75,12 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z **Æ Ø Å**
 
 - åh: ah/oh
 - øh: eh
-- æh: uh
+- æh: uh/eh
 - But also:
   - ah: ah
   - ih: ah/oh
   - uh: oh
+- Also used in real words
 
 [comment]: # (!!! data-auto-animate)
 
@@ -92,6 +93,9 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z **Æ Ø Å**
     ɛ, ɛː, œ, œː, ɐ, ɔ, ɔː,\
     a, aː, ɑ, ɑː, ɒ, ɒː
 - Big gap between spoken and written language
+  - "16" is pronounced with a "j"<br>sound but spelled with a "k"
+
+Note: These are very big flaws to fix, and I'm only one person.
 
 [comment]: # (!!! data-auto-animate)
 
@@ -103,7 +107,7 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z **Æ Ø Å**
 - (Other flaws to come later in the presentation)
 
 Note: I'm going to address the two flaws indirectly, but I want to focus
-on something more specific.
+on something more specific to get this going.
 
 [comment]: # (!!! data-auto-animate)
 
@@ -115,14 +119,21 @@ on something more specific.
   - Number of letters in alphabet: 29
   - ~4.83 μ-letters per person
 
+<div>
+
 - **English:**
   - Population of English speakers: ~1.5 billion
   - Number of letters in alphabet: 26
   - ~0.02 μ-letters per person
 
+</div>
+<!-- .element: class="fragment fade-up" -->
 Note: This is a measure of how big a burden each speaker of the language
-needs to carry.  By trimming the language down in size, it will be
-easier to carry it into the future.
+needs to carry.  At least in Denmark, the national language council
+doesn't have the power to specify the language, but merely to describe
+how it is being used.  By trimming the language down in size, it will be
+easier to carry it into the future.  We can either get more Danish
+speakers or simplify the alphabet, or both.
 
 [comment]: # (!!!)
 
@@ -164,6 +175,9 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
 - Æ
 - Ø
 - Å
+
+Note: We already have a responsibility for these letters as speakers of
+the English language, so we shouldn't have dual responsibility.
 
 [comment]: # (!!! data-auto-animate)
 
@@ -207,8 +221,8 @@ sed -r -e 's/[eiy]+/æ/g' -e 's/[ou]+/ø/g' -e 's/a+/å/g'
 - o, u -> ø
 - a -> å
 
-Note: We collapse multiple equal vowels into just one in order to avoid
-things like "æææ".
+Note: This is the official translation.  We collapse multiple equal
+vowels into just one in order to avoid things like "æææ".
 
 [comment]: # (!!!)
 
@@ -547,6 +561,10 @@ Parsing: Converting text characters into structured data
 
 ![](media/knuth-lr-1965.png)
 
+Note: I have explained the flaw, but I have yet to argue that it's
+actually true: Is it really hard to parse Danish by old software?  I
+should also explain what I mean by parsing.
+
 [comment]: # (!!!)
 
 # Parsing troubles
@@ -581,7 +599,8 @@ the lack of big compute.
 - Year: 1986
 - Uses Prolog to parse Danish for sentence analysis
 
-Note: I found this paper over 10 years ago.
+Note: I found this paper over 10 years ago.  Prolog is a programming
+language which we'll get into later.  Suffice it to say that it's great.
 
 [comment]: # (!!! class="row")
 
@@ -604,6 +623,9 @@ Note: So maybe this will be fast enough today?
 - Is my claim wrong?
 - Let's try to parse Danish
   - Useful for analyzing and translating the language.
+
+Note: If it turns out to be easy, then that's great, but otherwise we'll
+need to simplify dænsk further.
 
 [comment]: # (!!!)
 
@@ -846,6 +868,8 @@ Note: I'm not going into detail on this, but you're welcome to borrow my books i
 - General Prolog-based approach stays constant
 - ⇒ We need to do something with Prolog! <!-- .element: class="fragment fade-up" -->
 
+Note: Who am I to argue with this?  I wasn't around back then.
+
 [comment]: # (!!!)
 
 # Not just Denmark
@@ -853,6 +877,9 @@ Note: I'm not going into detail on this, but you're welcome to borrow my books i
 - Prolog also has other implementations than PC-PROLOG from Denmark
 - How was/is it used in other countries?
 - What can we learn from that in order to build our own solution?
+
+Note: Even though we're dealing with the Danish language, we can still
+seek inspiration from outside the borders.
 
 [comment]: # (!!!)
 
@@ -1100,7 +1127,7 @@ Note: ECU = European Currency Unit (it's a bit like Hax)
 
 ![](media/eurotradocexcerpts/1982rovsing-esperanto.png) <!-- .element: width="1400" -->
 
-*Alternatives crop up.  Christian Rovsing suggests using Esperanto as an intermediary language.*
+*Alternatives crop up.  Christian Rovsing suggests using Esperanto as an intermediate language.*
 
 Note: Christian Rovsing goes bankrupt and this doesn't happen. Later the
 owner becomes a member of parliament, which is confusing when searching
@@ -1157,6 +1184,8 @@ through the archives.
 
 *We never produced a good book about this, but we do have a nice manual.*
 
+Note: The irony is of course that it was manually translated to Danish.
+
 [comment]: # (!!!)
 
 ![](media/eurotradocexcerpts/93tid.png) <!-- .element: width="1900" -->
@@ -1167,9 +1196,8 @@ through the archives.
 
 ![](media/eurotradocexcerpts/93problemer.png) <!-- .element: width="1900" -->
 
-*1. Academics research grammars, they don't create dictionaries.*
-
-*2. Academics write papers, they don't write maintainable software.*
+1. *Academics research grammars, they don't create dictionaries.*
+2. *Academics write papers, they don't write maintainable software.*
 
 [comment]: # (!!!)
 
@@ -1498,6 +1526,10 @@ Anden indrettede sig efter forholdene
 
 Anden eftersigindrettede forholdene
 
+↓
+
+Åndæn æftærsægændrættædæ førhøldænæ
+
 **Super easy to parse!**
 
 [comment]: # (!!! data-auto-animate)
@@ -1509,6 +1541,10 @@ De klipser den fast
 ↓
 
 De fastklipser den
+
+↓
+
+Dæ fåstklæpsær dæn
 
 Note: This can cause an explosion in the number of verbs, but it's
 simpler, and it's so broken anyway.
@@ -1523,6 +1559,10 @@ Vægtstangsprincippet fungerer dårligt
 
 Vægtstangsprincippet dårligtfungerer
 
+↓
+
+Vægtstångspræncæppæt dårlægtføngærær
+
 Note: This is an example with adverbials.
 
 [comment]: # (!!!)
@@ -1534,6 +1574,10 @@ Han giver penge til butikken
 ↓
 
 Han tilpengegiver butikken
+
+↓
+
+Hån tælpængægævær bøtækkæn
 
 Note: This is an example with accusative.
 
@@ -1556,7 +1600,7 @@ Will need simplified languages for the targets as well:
 
 - Languages have a lot of legacy
 - You can remove that legacy
-- Making people us it is still hard
+- Making people use it is still hard
 
 [comment]: # (!!!)
 
