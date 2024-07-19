@@ -21,6 +21,14 @@ section.row {
 .contact-information a:link {
   color: black;
 }
+
+pre, code {
+  background-color: #ddd !important
+}
+
+.hljs {
+  color: black !important
+}
 </style>
 
 
