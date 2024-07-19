@@ -1608,9 +1608,9 @@ Will need simplified languages for the targets as well:
 
 <div style="text-align: left; font-size: 20px;">
 
-ønæcødæ:
+ønæcødæ: https://github.com/nqpz/-n-c-d-
 
-sto utilities:
+Prolog experiment: https://github.com/nqpz/ordbase
 
 Tutankhamun mask:<br>
 Roland Unger, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>,<br>
