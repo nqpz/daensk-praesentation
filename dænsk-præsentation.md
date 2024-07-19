@@ -28,7 +28,7 @@ section.row {
 ## The Danish language, improved
 
 Niels G. W. Serup<br>
-19 July 2024
+20 July 2024
 <div class="contact-information" style="font-size: 0.5em; font-family: monospace; text-align: right">
 
 ngws@metanohi.name<br>
